@@ -1,0 +1,14 @@
+// _cards.scss
+
+
+.cards {
+  width: 500px;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid gray;
+  box-shadow: 0 0 10px gray;
+  border-radius: 10px;
+  display: flex;
+  max-width: fit-content;
+  background-color: #eef1da;
+}

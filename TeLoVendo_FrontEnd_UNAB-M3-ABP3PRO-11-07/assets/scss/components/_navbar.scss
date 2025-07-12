@@ -1,0 +1,41 @@
+// _modal.scss
+@use "../abstracts/variables";
+
+.navbar {
+    padding: 1rem;
+    background-color: variables.$first-color;
+
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        list-style: none;
+        padding: 0;
+        justify-content: end;
+    }
+
+    &__item {
+        font-size: 1rem;
+    }
+
+    &__link {
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        border-radius: 20px;
+        background-color: variables.$second-color;
+        color: variables.$color-black;
+
+        &:hover {
+            background-color: variables.$third-color;
+            color: black;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+    }
+}
+
+.navbar__ficha {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
