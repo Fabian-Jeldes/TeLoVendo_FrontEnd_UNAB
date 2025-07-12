@@ -1,0 +1,98 @@
+// _about.scss
+@use "../abstracts/_variables.scss" as vars;
+
+body {
+  margin: 0;
+  font-family: vars.$font-family-base;
+  color: vars.$color-text;
+  background-color: vars.$color-bg;
+}
+
+.nosotros {
+  background-color: vars.$color-nosotros-bg;
+  padding: 32px;
+
+  &__titulo {
+    font-size: vars.$font-size-title;
+    margin-bottom: 16px;
+  }
+
+  &__descripcion {
+    font-size: vars.$font-size-text; 
+    margin-bottom: 32px;
+  }
+
+  &__subtitulo {
+    font-size: vars.$font-size-subtitle;
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+
+  &__objetivo,
+  &__responsables {
+    background-color: vars.$color-nosotros-section-bg;
+    padding: 16px;
+    border-radius: 8px;
+  }
+
+  &__lista {
+    list-style: none;
+    padding-left: 16px;
+    margin: 0;
+
+    &-item {
+      margin-bottom: 8px;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    padding: 24px;
+
+    &__titulo {
+      font-size: 16px;
+    }
+
+    &__subtitulo {
+      font-size: 16px;
+    }
+
+    &__descripcion {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 16px;
+
+    &__titulo {
+      font-size: 16px;
+    }
+
+    &__subtitulo {
+      font-size: 16px;
+    }
+
+    &__descripcion {
+      font-size: 16px;
+    }
+
+    &__objetivo,
+    &__responsables {
+      padding: 12px;
+    }
+  }
+}
+
+.footer {
+  background-color: vars.$color-footer-bg;
+  text-align: center;
+  padding: 16px;
+  font-size: 14px;
+
+  @media (max-width: 767px) {
+    font-size: 13px;
+    padding: 12px;
+  }
+}
+
+

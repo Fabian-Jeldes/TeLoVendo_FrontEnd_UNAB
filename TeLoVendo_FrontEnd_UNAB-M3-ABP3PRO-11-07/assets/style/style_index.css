@@ -1,0 +1,160 @@
+/* INDEX.HTML */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+nav ul {
+  list-style: none;
+  gap: 1rem;
+  flex-direction: row;
+}
+.ficha__imagen {
+  max-width: 100%;
+  height: auto;
+}
+.--bg-color1 {
+  background-color: #adb2d4;
+}
+.--bg-color2 {
+  background-color: #c7d9dd;
+}
+.--bg-color3 {
+  background-color: #d5e5d5;
+}
+.--bg-color4 {
+  background-color: #eef1da;
+}
+.--texto-blanco {
+  color: white;
+}
+.--texto-negro {
+  color: black;
+}
+.--fuente-opensans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.navegacion {
+  padding: 0.5rem;
+}
+.navegacion__menu {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  justify-content: end;
+}
+.navegacion__item {
+  font-size: 1rem;
+}
+.navegacion__link {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 20px;
+}
+.navegacion__link:hover {
+  background-color: #d5e5d5;
+  color: black;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+.hero__logo {
+  align-self: center;
+  width: 10%;
+  height: 10%;
+}
+.hero__titulo {
+  text-align: center;
+  padding-left: 4em;
+  padding-right: 4em;
+  margin: 1rem 0;
+}
+.hero__descripcion {
+  text-align: center;
+  padding: 2rem;
+  margin: 1rem 0;
+}
+.hero__botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.hero__boton {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  border: 0;
+}
+.hero__boton:hover {
+  background-color: #adb2d4;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.novedades {
+  padding: 2rem;
+  text-align: center;
+}
+
+.contacto {
+  padding: 40px 20px;
+}
+
+.contacto__container {
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contacto__titulo {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.contacto__formulario {
+  display: flex;
+  flex-direction: column;
+}
+.contacto__input,
+.contacto__textarea {
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contacto__textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contacto__boton {
+  padding: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contacto__boton:hover {
+  background-color: #c7d9dd;
+}
+
+.footer {
+  text-align: center;
+  font-weight: bold;
+}
